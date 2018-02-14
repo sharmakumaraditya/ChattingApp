@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_small"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@+id/text_view_notification_count"
+        android:layout_toLeftOf="@+id/text_view_notification_count"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text_view_username"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_view_notification_count"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/space_small"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text_view_last_message"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

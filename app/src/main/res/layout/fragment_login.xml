@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:background="#fff"
+    android:padding="@dimen/padding_avg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="cursive"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:id="@+id/edit_text_email_id"
+        android:singleLine="false"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="cursive"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:id="@+id/edit_text_password"/>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/button_register"
+        android:fontFamily="casual"
+            android:textStyle="bold"
+        android:text="@string/login_register"
+        style="?attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+            android:background="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:id="@+id/button_login"
+            android:text="@string/login"
+            style="?attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
+            android:background="@color/blue_grey_100" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/space_avg"
+        android:layout_width="match_parent"/>
+
+
+</LinearLayout>

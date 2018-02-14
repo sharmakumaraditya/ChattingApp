@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:paddingTop="@dimen/padding_small"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingBottom="@dimen/padding_small"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/circle_accent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:text="a"
+        android:textStyle="bold"
+        android:textColor="@color/grey_100"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="true"
+        android:maxEms="1"
+        android:id="@+id/text_view_user_alphabet"
+        tools:fontFamily="casual"
+        tools:textColorLink="#000"
+        android:textColorLink="#000" />
+
+    <android.support.v4.widget.Space
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/space_avg"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:text="abcd@xyz.com"
+        android:textColor="@color/grey_700"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_view_username"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

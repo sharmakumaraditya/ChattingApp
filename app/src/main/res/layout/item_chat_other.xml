@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+
+    android:paddingTop="@dimen/padding_small"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingBottom="@dimen/padding_small"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:background="@drawable/circle_accent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:text="a"
+        android:textStyle="bold"
+        android:textColor="@color/grey_100"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="true"
+        android:maxEms="1"
+        android:gravity="center"
+        android:id="@+id/text_view_user_alphabet"
+        android:fontFamily="casual" />
+
+    <android.support.v4.widget.Space
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/space_avg"/>
+
+    <TextView
+        android:background="@color/cyan_A700"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:text="Hello how do u do"
+        android:textColor="@color/grey_100"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_view_chat_message"
+        android:padding="@dimen/padding_small"
+        android:layout_marginEnd="@dimen/margin_huge"
+        android:layout_marginRight="@dimen/margin_huge"/>
+
+</LinearLayout>
